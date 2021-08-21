@@ -35,7 +35,7 @@ const NavMenuStyles = styled.nav`
         height: 100%;
         padding: 0.5rem 2.5rem;
         color: #64b2ff;
-        font-family: sans-serif;
+
         font-size: 1rem;
         font-weight: 300;
         cursor: pointer;
@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="wrapper">
         <div className="nav__logo">Logo</div>
 
-        {/* <div className="nav__icon-menu">
+        {/* <div className="nav__icon-menu iconSize">
           <CgMenu />
         </div> */}
 
