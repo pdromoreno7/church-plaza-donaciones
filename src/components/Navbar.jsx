@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { CgMenu } from "react-icons/cg";
+import { CgMenu, CgClose } from "react-icons/cg";
 
 const NavMenuStyles = styled.nav`
   width: 100%;
@@ -98,7 +98,7 @@ export default function Navbar() {
           className="nav__icon-menu iconSize"
           onClick={() => setShowMobileMenu(!showMobileMenu)}
         >
-          <CgMenu />
+          {showMobileMenu ? <CgMenu /> : <CgClose />}
         </div>
 
         <ul className={!showMobileMenu ? "nav__menu open__menu" : "nav__menu"}>
