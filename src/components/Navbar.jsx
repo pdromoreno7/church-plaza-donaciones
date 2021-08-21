@@ -63,21 +63,24 @@ const NavMenuStyles = styled.nav`
   }
   @media screen and (max-width: 960px) {
     .nav__menu {
-      background-color: #23394d;
+      position: absolute;
+      top: 80px;
+      background-color: #f0f0ff;
       position: absolute;
       top: 70px;
       //left: -100%;  //Import
-      right: -100%;
+      right: -110%;
       width: 100%;
       height: 90vh;
-      justify-content: center;
       flex-direction: column;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       transition: 0.5s all ease;
     }
     .nav__menu.open__menu {
-      width: 100%;
+      width: 50%;
       right: 0;
+      margin: 0;
     }
     .nav__item {
       width: 100%;
@@ -93,6 +96,8 @@ const NavMenuStyles = styled.nav`
       display: flex;
       align-items: center;
       cursor: pointer;
+      margin-right: 1rem;
+      color: var(--secun-color);
     }
   }
 `;
