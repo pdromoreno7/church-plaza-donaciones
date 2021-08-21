@@ -27,7 +27,15 @@
   --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
+  /*===== Margenes =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
 }
+
 /* html {
   font-size: 10px;
   font-family: "Roboto Mono";
@@ -55,4 +63,11 @@ button {
 }
 .iconSize {
   font-size: 1.8rem;
+}
+.bd-container {
+  /* max-width: 1024px; */
+  max-width: 1300px;
+  /* width: calc(100% - 2rem); */
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
 }

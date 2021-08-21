@@ -9,7 +9,7 @@ const NavMenuStyles = styled.nav`
   background-color: #f0f0ff;
   .wrapper {
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +106,7 @@ export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
     <NavMenuStyles>
-      <div className="wrapper">
+      <div className="wrapper bd-container">
         <div className="nav__logo">
           <img src={logoNav} alt="" />
         </div>
