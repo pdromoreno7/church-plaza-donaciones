@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { CgMenu, CgClose } from "react-icons/cg";
+import logoNav from "../assets/LogoFuente-Nav.svg";
 
 const NavMenuStyles = styled.nav`
   width: 100%;
@@ -16,36 +17,45 @@ const NavMenuStyles = styled.nav`
     margin: auto;
   }
   .nav__logo {
-    margin-left: 0.5rem;
+    margin-left: 2.5rem;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    img {
+      width: 100%;
+    }
   }
   .nav__menu {
     height: 100%;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-right: 1.5rem;
   }
   .nav__item {
+    display: flex;
     height: 100%;
+    align-items: center;
   }
   .nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+
     padding: 0.5rem 2.5rem;
-    color: #64b2ff;
+    color: var(--font-color-2);
 
     font-size: 1rem;
     font-weight: 300;
     cursor: pointer;
-    transition: 0.5s all ease;
+    border-radius: 10px;
+    /* transition: 0.5s all ease; */
     &:hover {
-      color: #fff;
-      background-color: #e0792a;
-      transition: 0.5s all ease;
+      color: var(--white);
+      /* transition: 0.3s ease; */
+      background-color: var(--tercer-color);
+      border-radius: 4px;
+      transition: all 0.2s ease-out;
     }
   }
   .nav__icon-menu {
@@ -92,7 +102,9 @@ export default function Navbar() {
   return (
     <NavMenuStyles>
       <div className="wrapper">
-        <div className="nav__logo">Logo</div>
+        <div className="nav__logo">
+          <img src={logoNav} alt="" />
+        </div>
 
         <div
           className="nav__icon-menu iconSize"
