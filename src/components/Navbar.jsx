@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import { CgMenu } from "react-icons/cg";
+import { CgMenu } from "react-icons/cg";
 
 const NavMenuStyles = styled.nav`
   width: 100%;
@@ -26,8 +26,27 @@ const NavMenuStyles = styled.nav`
     display: flex;
     justify-content: space-between;
     list-style: none;
+    @media screen and (max-width: 960px) {
+      background-color: #23394d;
+      position: absolute;
+      top: 70px;
+      left: 0; //${({ open }) => (open ? "0" : "-100%")}; //Import
+      width: 100%;
+      height: 90vh;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.5s all ease;
+    }
     .nav__item {
       height: 100%;
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: ce;
+        align-items: center;
+      }
       .nav__link {
         display: flex;
         justify-content: center;
@@ -45,7 +64,18 @@ const NavMenuStyles = styled.nav`
           background-color: #e0792a;
           transition: 0.5s all ease;
         }
+        @media screen and (max-width: 960px) {
+          width: 100%;
+        }
       }
+    }
+  }
+  .nav__icon-menu {
+    display: none;
+    @media screen and (max-width: 960px) {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
     }
   }
 `;
@@ -56,9 +86,9 @@ export default function Navbar() {
       <div className="wrapper">
         <div className="nav__logo">Logo</div>
 
-        {/* <div className="nav__icon-menu iconSize">
+        <div className="nav__icon-menu iconSize">
           <CgMenu />
-        </div> */}
+        </div>
 
         <ul className="nav__menu">
           <li className="nav__item">
