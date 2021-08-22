@@ -33,9 +33,36 @@ const HeroStyles = styled.section`
   .bd-container {
     margin-right: 0;
   }
-  /* @media screen and (max-width: 1110px); {
+  @media screen and (max-width: 375px) {
+    .hero__main {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      height: 100vh;
+    }
+    .hero__image-img {
+      position: relative;
+      z-index: var(--z-normal);
+    }
+    /* .hero__fondo-mobile {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+      background-image: url(../assets/Hero-Image.jpg);
+    } */
+    .hero__info {
+      display: flex;
+      flex-direction: column;
 
-  } */
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      z-index: var(--z-tooltip);
+      top: 50%;
+    }
+  }
 `;
 
 export function Hero() {
@@ -49,6 +76,10 @@ export function Hero() {
         </div>
         <div className="hero__image">
           <img src={heroImg} alt="" className="hero__image-img" />
+          <div
+            className="hero__fondo-mobile"
+            // style={{ background: `url(${heroImg})` }}
+          ></div>
         </div>
       </div>
     </HeroStyles>

@@ -4,6 +4,8 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import logoNav from "../assets/LogoFuente-Nav.svg";
 
 const NavMenuStyles = styled.nav`
+  position: fixed;
+  z-index: var(--z-fixed);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -73,7 +75,7 @@ const NavMenuStyles = styled.nav`
       //left: -100%;  //Import
       right: -110%;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
