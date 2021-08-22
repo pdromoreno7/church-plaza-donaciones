@@ -81,6 +81,9 @@ const NavMenuStyles = styled.nav`
       align-items: flex-start;
       transition: 0.5s all ease;
     }
+    .nav__logo {
+      width: 150px;
+    }
     .nav__menu.open__menu {
       width: 50%;
       right: 0;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import heroImg from "../assets/Hero-Image.jpg";
+import heroImgGradiente from "../assets/Hero-Image-gradiente.jpg";
 import { Button } from "./Button";
 
 const HeroStyles = styled.section`
@@ -30,6 +31,9 @@ const HeroStyles = styled.section`
     object-fit: cover;
     margin: 0;
   }
+  .hero__fondo-mobile {
+    display: none;
+  }
   .bd-container {
     margin-right: 0;
   }
@@ -41,8 +45,14 @@ const HeroStyles = styled.section`
       height: 100vh;
     }
     .hero__image-img {
-      position: relative;
-      z-index: var(--z-normal);
+      display: none;
+    }
+    .hero__fondo-mobile {
+      display: initial;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
     }
     /* .hero__fondo-mobile {
       display: block;
@@ -76,10 +86,7 @@ export function Hero() {
         </div>
         <div className="hero__image">
           <img src={heroImg} alt="" className="hero__image-img" />
-          <div
-            className="hero__fondo-mobile"
-            // style={{ background: `url(${heroImg})` }}
-          ></div>
+          <img src={heroImgGradiente} alt="" className="hero__fondo-mobile" />
         </div>
       </div>
     </HeroStyles>
