@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import heroImg from "../assets/Hero-Image.jpg";
+import { Button } from "./Button";
 
 const HeroStyles = styled.section`
   width: 100%;
@@ -16,7 +17,6 @@ const HeroStyles = styled.section`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* margin: 0; */
   }
   .hero__info {
     width: 400px;
@@ -39,6 +39,7 @@ export function Hero() {
         <div className="hero__info">
           <h1>Reedificando nuestro altar</h1>
           <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
+          <Button btnText="Conocer el proyecto" />
         </div>
         <div className="hero__image">
           <img src={heroImg} alt="" className="hero__image-img" />
