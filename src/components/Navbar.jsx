@@ -17,7 +17,7 @@ const NavMenuStyles = styled.nav`
     margin: auto;
   }
   .nav__logo {
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -30,7 +30,7 @@ const NavMenuStyles = styled.nav`
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
   }
   .nav__item {
     display: flex;

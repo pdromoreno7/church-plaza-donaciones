@@ -44,6 +44,7 @@
 body {
   overflow-x: hidden;
   font-family: var(--body-font);
+  background-color: var(--main-color);
 }
 ul,
 li {
