@@ -36,11 +36,10 @@
   --mb-6: 3rem;
 }
 
-/* html {
-  font-size: 10px;
-  font-family: "Roboto Mono";
-  background-color: var(--dark-bg);
-} */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: var(--body-font);

@@ -13,13 +13,13 @@ const HeroStyles = styled.section`
   .hero__main {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 60%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
   .hero__info {
-    width: 400px;
+    width: 80%;
   }
   .hero__image {
     height: 100%;
@@ -30,6 +30,12 @@ const HeroStyles = styled.section`
     object-fit: cover;
     margin: 0;
   }
+  .bd-container {
+    margin-right: 0;
+  }
+  /* @media screen and (max-width: 1110px); {
+
+  } */
 `;
 
 export function Hero() {

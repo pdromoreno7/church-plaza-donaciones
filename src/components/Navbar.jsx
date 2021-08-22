@@ -4,6 +4,8 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import logoNav from "../assets/LogoFuente-Nav.svg";
 
 const NavMenuStyles = styled.nav`
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 70px;
   background-color: #f0f0ff;
@@ -17,7 +19,7 @@ const NavMenuStyles = styled.nav`
     margin: auto;
   }
   .nav__logo {
-    /* margin-left: 2.5rem; */
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
