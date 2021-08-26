@@ -37,7 +37,7 @@ const HeroStyles = styled.section`
   .bd-container {
     margin-right: 0;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 960px) {
     .hero__main {
       display: flex;
       justify-content: center;
