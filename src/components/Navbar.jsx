@@ -11,6 +11,7 @@ const NavMenuStyles = styled.nav`
   width: 100%;
   height: 70px;
   background-color: #f0f0ff;
+  color: var(--font-color-1);
   .wrapper {
     width: 100%;
     /* max-width: 1300px; */
