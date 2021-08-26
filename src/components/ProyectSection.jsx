@@ -15,6 +15,7 @@ const ProyectSectionStyles = styled.section`
     margin-bottom: 24px;
   }
   .proyect__main {
+    width: 90%;
     display: grid;
     gap: 2rem;
     grid-template-columns: 60% 1fr;
