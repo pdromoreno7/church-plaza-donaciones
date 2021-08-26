@@ -21,6 +21,7 @@ const HeroStyles = styled.section`
   }
   .hero__info {
     width: 80%;
+    margin-left: 1rem;
   }
   .hero__image {
     height: 100%;

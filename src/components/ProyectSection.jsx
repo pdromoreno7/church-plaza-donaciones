@@ -4,7 +4,8 @@ import ProyectImg from "../assets/proyect__info-img.png";
 import { Button } from "./Button";
 
 const ProyectSectionStyles = styled.section`
-  margin: 0 15px;
+  /* margin: 0 15px; */
+  margin-left: 1rem;
   padding-top: 80px;
   padding-bottom: 50px;
   width: 100%;
