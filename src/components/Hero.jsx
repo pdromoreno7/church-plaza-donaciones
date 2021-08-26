@@ -8,7 +8,7 @@ const HeroStyles = styled.section`
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   background-color: var(--white);
   .hero__main {
@@ -34,9 +34,7 @@ const HeroStyles = styled.section`
   .hero__fondo-mobile {
     display: none;
   }
-  .bd-container {
-    margin-right: 0;
-  }
+
   @media screen and (max-width: 960px) {
     .hero__main {
       display: flex;
@@ -78,15 +76,17 @@ const HeroStyles = styled.section`
 export function Hero() {
   return (
     <HeroStyles>
-      <div className="hero__main bd-container ">
-        <div className="hero__info">
-          <h1>Reedificando nuestro altar</h1>
-          <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
-          <Button btnText="Conocer el proyecto" />
-        </div>
-        <div className="hero__image">
-          <img src={heroImg} alt="" className="hero__image-img" />
-          <img src={heroImgGradiente} alt="" className="hero__fondo-mobile" />
+      <div className="bd-container">
+        <div className="hero__main  ">
+          <div className="hero__info">
+            <h1>Reedificando nuestro altar</h1>
+            <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
+            <Button btnText="Conocer el proyecto" />
+          </div>
+          <div className="hero__image">
+            <img src={heroImg} alt="" className="hero__image-img" />
+            <img src={heroImgGradiente} alt="" className="hero__fondo-mobile" />
+          </div>
         </div>
       </div>
     </HeroStyles>
