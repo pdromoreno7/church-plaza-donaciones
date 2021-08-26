@@ -4,17 +4,18 @@ import styled from "styled-components";
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    display: flex;
+    /* display: flex;
     /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    display: inline-block;
     font-size: 1rem;
     background-color: var(--secun-color);
     color: var(--white);
-    /* padding: 0.7em 2em; */
-    padding: 10px;
-    max-width: 209px;
-    height: 50px;
+    padding: 0.7em 2em;
+
+    /* max-width: 209px;
+    height: 50px; */
     border-radius: 5px;
   }
 `;
