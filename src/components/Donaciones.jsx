@@ -6,8 +6,13 @@ import Bancolombia from "../assets/bancolombia-logo.svg";
 import styled from "styled-components";
 
 const DontationStyle = styled.section`
-  padding: 30px 0;
+  /* padding-top: 30px;
+  padding-bottom: 60px;
   margin-bottom: 80px;
+  margin-top: 30px; */
+  padding-top: 80px;
+  padding-bottom: 100px;
+
   .donation__title {
     font-size: var(--h1-font-size);
     font-weight: var(--Bold-font);
