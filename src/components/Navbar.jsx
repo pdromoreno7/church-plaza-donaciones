@@ -102,9 +102,10 @@ const NavMenuStyles = styled.nav`
     }
     .nav__icon-menu {
       display: flex;
+
       align-items: center;
       cursor: pointer;
-      margin-right: 1rem;
+
       color: var(--secun-color);
     }
   }
