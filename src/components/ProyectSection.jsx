@@ -98,7 +98,7 @@ const ProyectSectionStyles = styled.section`
 
 export function ProyectSection() {
   return (
-    <ProyectSectionStyles>
+    <ProyectSectionStyles id="proyect">
       <div className="bd-container">
         <div className="proyect__title">
           <h2>Anvance del proyecto</h2>

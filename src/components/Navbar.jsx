@@ -129,17 +129,29 @@ export default function Navbar() {
 
         <ul className={!showMobileMenu ? "nav__menu open__menu" : "nav__menu"}>
           <li className="nav__item">
-            <a href="#home" className="nav__link">
+            <a
+              href="#inicio"
+              className="nav__link"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+            >
               Inicio
             </a>
           </li>
           <li className="nav__item">
-            <a href="#proyect" className="nav__link">
+            <a
+              href="#proyect"
+              className="nav__link"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+            >
               Proyecto
             </a>
           </li>
           <li className="nav__item">
-            <a href="#donaciones" className="nav__link">
+            <a
+              href="#donacion"
+              className="nav__link"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+            >
               Donaciones
             </a>
           </li>

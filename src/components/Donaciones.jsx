@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 const DontationStyle = styled.section`
   padding: 30px 0;
+  margin-bottom: 80px;
   .donation__title {
     font-size: var(--h1-font-size);
     font-weight: var(--Bold-font);
@@ -41,7 +42,7 @@ const DontationStyle = styled.section`
 
 export function Donaciones() {
   return (
-    <DontationStyle>
+    <DontationStyle id="donacion">
       <div className="bd-container">
         <div className="donation__container">
           <h2 className="donation__title">Medios de donación</h2>

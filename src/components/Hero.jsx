@@ -79,7 +79,7 @@ const HeroStyles = styled.section`
 
 export function Hero() {
   return (
-    <HeroStyles>
+    <HeroStyles id="inicio">
       <div className="bd-container">
         <div className="hero__main  ">
           <div className="hero__info">
