@@ -21,7 +21,10 @@ const FooterStyles = styled.footer`
 
     ul {
       line-height: 2rem;
-      li:hover {
+      a {
+        color: var(--font-color);
+      }
+      a:hover {
         color: var(--font-color-2);
         transition: 0.2s ease-out;
       }
@@ -69,9 +72,15 @@ export function Footer() {
         <div className="footer__nav">
           <p className="footer__nav-title">Funciones</p>
           <ul>
-            <li>Inicio</li>
-            <li>Nombre del proyecto</li>
-            <li>Medios de donación</li>
+            <li>
+              <a href="#inicio"> Inicio</a>
+            </li>
+            <li>
+              <a href="#proyect"> Nombre del proyecto</a>
+            </li>
+            <li>
+              <a href="#donacion"> Medios de donación</a>
+            </li>
           </ul>
         </div>
         <div className="footer__contact">
