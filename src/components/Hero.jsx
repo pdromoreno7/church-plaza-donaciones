@@ -21,6 +21,9 @@ const HeroStyles = styled.section`
   }
   .hero__info {
     width: 80%;
+    h1 {
+      font-size: var(--biggest-font-size);
+    }
     /* margin-left: 1rem; */
   }
   .hero__image {
@@ -73,6 +76,13 @@ const HeroStyles = styled.section`
     }
     .bd-container {
       padding: 0;
+    }
+  }
+  @media screen and (max-width: 764px) {
+    .hero__info {
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   }
 `;
