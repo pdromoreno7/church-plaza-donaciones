@@ -1,3 +1,4 @@
+import { Donaciones } from "./components/Donaciones";
 import { Hero } from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { ProyectSection } from "./components/ProyectSection";
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <ProyectSection />
+      <Donaciones />
     </>
   );
 }
