@@ -13,7 +13,11 @@
   --font-color-1: #142335;
   --font-color-2: #89969f;
   --white: #ffffff;
-  --gradient-color: linear-gradient(104.46deg, #2232af -5.16%, #6abce4 107.22%);
+  --card-gradient-color: linear-gradient(
+    104.46deg,
+    #2232af -5.16%,
+    #6abce4 107.22%
+  );
   --gradient-img: linear-gradient(
     180deg,
     rgba(196, 196, 196, 0) -18.02%,
