@@ -26,11 +26,16 @@
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 1.8rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
+  /*===== Font W =====*/
+  --light-font: 400;
+  --normal-font: 500;
+  --medium-font: 600;
+  --Bold-font: 700;
   /*===== Margenes =====*/
   --mb-1: 0.5rem;
   --mb-2: 1rem;

@@ -8,10 +8,13 @@ const ButtonStyle = styled.div`
     /* flex-direction: row; */
     /* justify-content: center;
     align-items: center; */
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 1rem;
-    background-color: var(--secun-color);
-    color: var(--white);
+    background-color: ${(props) =>
+      props.outline ? "var(--white)" : "var(--secun-color)"};
+    /* var(--secun-color); */
+    color: ${(props) =>
+      props.outline ? "var(--font-color-1)" : "var(--white)"};
     padding: 0.7em 2em;
 
     /* max-width: 209px;
@@ -20,9 +23,13 @@ const ButtonStyle = styled.div`
   }
 `;
 
-export function Button({ btnLink, btnText }) {
+export function Button({
+  btnLink = "test",
+  btnText = "Boton",
+  outline = false,
+}) {
   return (
-    <ButtonStyle>
+    <ButtonStyle outline={outline}>
       <a href={btnLink} className="button">
         {btnText}
       </a>

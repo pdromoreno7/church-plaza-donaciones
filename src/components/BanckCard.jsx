@@ -4,7 +4,8 @@ import { Button } from "./Button";
 
 const BanckStyle = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   width: 566px;
   height: 283px;
@@ -12,6 +13,13 @@ const BanckStyle = styled.div`
   border-radius: 5px;
   background: var(--card-gradient-color);
   color: var(--white);
+  .card__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
   .card__info p {
     padding-bottom: 1rem;
   }
@@ -20,23 +28,23 @@ const BanckStyle = styled.div`
   }
   .card__button {
     align-self: flex-end;
-    color: black;
-    /* justify-self: end; */
   }
 `;
 
 export function BanckCard({ logoBanck, number }) {
   return (
     <BanckStyle>
-      <figure>
-        <img src={logoBanck} alt="Icono de banco" />
-      </figure>
-      <div className="card__info">
-        <p>Numero de cuenta</p>
-        <p className="card__info-number">{number}</p>
-      </div>
-      <div className="card__button">
-        <Button btnText="Donar" />
+      <div className="card__container">
+        <figure>
+          <img src={logoBanck} alt="Icono de banco" />
+        </figure>
+        <div className="card__info">
+          <p>Numero de cuenta</p>
+          <p className="card__info-number">{number}</p>
+        </div>
+        <div className="card__button">
+          <Button btnText="Donar" outline />
+        </div>
       </div>
     </BanckStyle>
   );
