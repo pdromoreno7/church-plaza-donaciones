@@ -21,7 +21,7 @@ const HeroStyles = styled.section`
   }
   .hero__info {
     width: 80%;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
   .hero__image {
     height: 100%;
@@ -70,6 +70,9 @@ const HeroStyles = styled.section`
       position: absolute;
       z-index: var(--z-tooltip);
       top: 50%;
+    }
+    .bd-container {
+      padding: 0;
     }
   }
 `;

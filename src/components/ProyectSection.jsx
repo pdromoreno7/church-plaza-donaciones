@@ -5,7 +5,7 @@ import { Button } from "./Button";
 
 const ProyectSectionStyles = styled.section`
   /* margin: 0 15px; */
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   padding-top: 80px;
   padding-bottom: 50px;
   width: 100%;
@@ -57,6 +57,34 @@ const ProyectSectionStyles = styled.section`
     border-radius: 4px;
     padding: 32px 24px;
     height: 100%;
+  }
+  @media screen and (max-width: 960px) {
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    margin-left: 0;
+    margin: 0 14px;
+
+    .proyect__main {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    .proyect__graphi {
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem;
+    }
+    .proyect__graphi-description {
+      text-align: center;
+    }
+    .proyect__donacion {
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem;
+      p {
+        text-align: center;
+      }
+    }
   }
 `;
 

@@ -22,7 +22,7 @@ const NavMenuStyles = styled.nav`
     margin: auto;
   }
   .nav__logo {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     display: flex;
     align-items: center;
     font-size: 1.2rem;
