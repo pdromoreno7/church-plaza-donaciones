@@ -7,7 +7,7 @@ const BanckStyle = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  width: 566px;
+  max-width: 566px;
   height: 283px;
   padding: 30px 25px;
   border-radius: 5px;

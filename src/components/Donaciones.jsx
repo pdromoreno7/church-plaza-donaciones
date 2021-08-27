@@ -13,8 +13,29 @@ const DontationStyle = styled.section`
     margin-bottom: 20px;
   }
   .donation__main {
-    display: flex;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .donation__main-items {
+    max-width: 566px;
+    height: 283px;
+  }
+  @media screen and (max-width: 960px) {
+    .donation__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .donation__main-items {
+      width: 100%;
+    }
+    .donation__main {
+      width: 100%;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 `;
 
@@ -22,10 +43,16 @@ export function Donaciones() {
   return (
     <DontationStyle>
       <div className="bd-container">
-        <h2 className="donation__title">Medios de donación</h2>
-        <div className="donation__main">
-          <BanckCard logoBanck={NequiLogo} number={3144516187} />
-          <BanckCard logoBanck={Bancolombia} number={3144516187} />
+        <div className="donation__container">
+          <h2 className="donation__title">Medios de donación</h2>
+          <div className="donation__main">
+            <div className="donation__main-items">
+              <BanckCard logoBanck={NequiLogo} number={3144516187} />
+            </div>
+            <div className="donation__main-items">
+              <BanckCard logoBanck={Bancolombia} number={3144516187} />
+            </div>
+          </div>
         </div>
       </div>
     </DontationStyle>
