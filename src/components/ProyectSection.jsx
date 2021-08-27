@@ -60,6 +60,9 @@ const ProyectSectionStyles = styled.section`
     padding: 25px 20px;
     height: 100%;
   }
+  .proyect__donacion-description {
+    height: auto;
+  }
   @media screen and (max-width: 960px) {
     /* flex-direction: column;
     align-items: center; */
@@ -76,13 +79,18 @@ const ProyectSectionStyles = styled.section`
       align-items: center;
       /* padding: 5rem; */
     }
-
-    .proyect__graphi-description {
+    /* .proyect__graphi-number {
+      flex: 1;
+    } */
+    .proyect__graphi-description,
+    .proyect__donacion-description {
       text-align: center;
+      width: 70%;
     }
     .proyect__donacion {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
       /* padding: 5rem; */
       p {
         text-align: center;
@@ -120,15 +128,19 @@ export function ProyectSection() {
             </div>
           </div>
           <div className="proyect__donacion">
-            <h3>Conoce como donar</h3>
-            <p>
-              Puedes formar parte de este proyecto y darnos tu ayuda para
-              hacerlo una realidad <br />
-              <br />
-              Las donaciones se ven reflejadas cada domingo en la tarde hora
-              colombia
-            </p>
-            <Button btnText="Ver medios de donación" />
+            <div className="proyect__donacion-description">
+              <h3>Conoce como donar</h3>
+              <p>
+                Puedes formar parte de este proyecto y darnos tu ayuda para
+                hacerlo una realidad <br />
+                <br />
+                Las donaciones se ven reflejadas cada domingo en la tarde hora
+                colombia
+              </p>
+            </div>
+            <div className="proyect__donacion-buttom">
+              <Button btnText="Ver medios de donación" />
+            </div>
           </div>
         </div>
       </div>

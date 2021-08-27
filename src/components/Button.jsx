@@ -8,7 +8,7 @@ const ButtonStyle = styled.div`
     /* flex-direction: row; */
     /* justify-content: center;
     align-items: center; */
-    /* display: inline-block; */
+    /* display: ; */
     font-size: 1rem;
     background-color: ${(props) =>
       props.outline ? "var(--white)" : "var(--secun-color)"};
