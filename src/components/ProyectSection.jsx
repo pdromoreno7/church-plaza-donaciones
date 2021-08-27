@@ -7,7 +7,7 @@ const ProyectSectionStyles = styled.section`
   /* margin: 0 15px; */
   /* margin-left: 1rem; */
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 100%;
   height: auto;
   display: flex;

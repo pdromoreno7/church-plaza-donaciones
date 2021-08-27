@@ -15,7 +15,7 @@ const ButtonStyle = styled.div`
     /* var(--secun-color); */
     color: ${(props) =>
       props.outline ? "var(--font-color-1)" : "var(--white)"};
-    padding: 0.7em 2em;
+    padding: 0.7em 1em;
 
     /* max-width: 209px;
     height: 50px; */
