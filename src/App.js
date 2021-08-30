@@ -1,4 +1,3 @@
-import CircleProgress from "./components/CircleProgress";
 import { Donaciones } from "./components/Donaciones";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
@@ -8,12 +7,11 @@ import { ProyectSection } from "./components/ProyectSection";
 function App() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <ProyectSection />
       <Donaciones />
-      <Footer /> */}
-      <CircleProgress />
+      <Footer />
     </>
   );
 }

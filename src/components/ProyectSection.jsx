@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import ProyectImg from "../assets/proyect__info-img.png";
+// import ProyectImg from "../assets/proyect__info-img.png";
 import { Button } from "./Button";
+import CircleProgress from "./CircleProgress";
 
 const ProyectSectionStyles = styled.section`
   /* margin: 0 15px; */
@@ -114,7 +115,8 @@ export function ProyectSection() {
         <div className="proyect__main">
           <div className="proyect__graphi">
             <figure className="proyect__graphi-number">
-              <img src={ProyectImg} alt="" />
+              {/* <img src={ProyectImg} alt="" /> */}
+              <CircleProgress />
             </figure>
             <div className="proyect__graphi-description">
               <h3>Levantamiento de paredes</h3>

@@ -11,11 +11,12 @@ const CircleProgressStyles = styled.div`
       width: 160px;
       height: 160px;
       border-radius: 50%;
-
+      background: #ada5d0;
       padding: 20px;
       box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
         -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
       .inner {
+        background-color: var(--white);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,6 +30,7 @@ const CircleProgressStyles = styled.div`
           0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 
         #number-progress {
+          font-size: var(--h2-font-size);
           font-weight: 600;
           color: #555;
         }
@@ -36,7 +38,7 @@ const CircleProgressStyles = styled.div`
     }
     circle {
       fill: none;
-      stroke: cornflowerblue;
+      stroke: var(--secun-color);
       stroke-width: 20px;
       stroke-dasharray: 472;
       stroke-dashoffset: 472;
