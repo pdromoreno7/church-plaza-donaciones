@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from "./Button";
 
 const BanckStyle = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,15 +28,24 @@ const BanckStyle = styled.div`
     letter-spacing: 0.2rem;
   }
   .card__button {
+    /* top: 66%; */
+    justify-self: flex-end;
     align-self: flex-end;
+    /* left: 80%; */
+    /* position: absolute; */
   }
+  /* @media screen and (max-width: 530px) {
+    height: 200px;
+    .card__logo {
+    }
+  } */
 `;
 
 export function BanckCard({ logoBanck, number }) {
   return (
     <BanckStyle>
       <div className="card__container">
-        <figure>
+        <figure className="card__logo">
           <img src={logoBanck} alt="Icono de banco" />
         </figure>
         <div className="card__info">

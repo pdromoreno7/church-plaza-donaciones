@@ -43,6 +43,11 @@ const DontationStyle = styled.section`
       justify-items: center;
     }
   }
+  /* @media screen and (max-width: 530px) {
+    .donation__main-items {
+      height: 200px;
+    }
+  } */
 `;
 
 export function Donaciones() {
