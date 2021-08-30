@@ -39,9 +39,11 @@ const ProyectSectionStyles = styled.section`
   }
   .proyect__graphi-number {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    min-width: 236.83px;
     height: 320px;
     background-color: var(--main-color);
   }
@@ -65,12 +67,13 @@ const ProyectSectionStyles = styled.section`
     height: auto;
   }
   @media screen and (max-width: 960px) {
-    /* flex-direction: column;
-    align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     margin-left: 0;
-    /* margin: 0 14px; */
-
+    .project-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
     .proyect__main {
       grid-template-columns: 1fr;
       width: 100%;
@@ -80,9 +83,9 @@ const ProyectSectionStyles = styled.section`
       align-items: center;
       /* padding: 5rem; */
     }
-    /* .proyect__graphi-number {
-      flex: 1;
-    } */
+    .proyect__graphi-number {
+      width: 70%;
+    }
     .proyect__graphi-description,
     .proyect__donacion-description {
       text-align: center;
@@ -108,7 +111,7 @@ const ProyectSectionStyles = styled.section`
 export function ProyectSection() {
   return (
     <ProyectSectionStyles id="proyect">
-      <div className="bd-container">
+      <div className="project-container bd-container">
         <div className="proyect__title">
           <h2>Anvance del proyecto</h2>
         </div>
@@ -117,6 +120,7 @@ export function ProyectSection() {
             <figure className="proyect__graphi-number">
               {/* <img src={ProyectImg} alt="" /> */}
               <CircleProgress />
+              <h3>Progreso</h3>
             </figure>
             <div className="proyect__graphi-description">
               <h3>Levantamiento de paredes</h3>
