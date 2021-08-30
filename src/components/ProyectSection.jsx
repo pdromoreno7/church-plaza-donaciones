@@ -37,6 +37,9 @@ const ProyectSectionStyles = styled.section`
     padding: 30px 20px;
     height: 100%;
   }
+  .proyect__graphi-buttom {
+    display: none;
+  }
   .proyect__graphi-number {
     display: flex;
     flex-direction: column;
@@ -102,8 +105,21 @@ const ProyectSectionStyles = styled.section`
     }
   }
   @media screen and (max-width: 375px) {
+    /* .proyect__main {
+      margin-bottom: 20px;
+    } */
     .proyect__graphi-number {
       width: 100%;
+    }
+    .proyect__graphi-buttom {
+      display: initial;
+      margin-bottom: 20px;
+    }
+    .proyect__donacion {
+      display: none;
+    }
+    .proyect__graphi-description {
+      width: 95%;
     }
   }
 `;
@@ -131,6 +147,9 @@ export function ProyectSection() {
                 Este consta de tres etapas que son recaudación, realización y
                 finalización.
               </p>
+              <div className="proyect__graphi-buttom">
+                <Button btnText="Hacer donación" />
+              </div>
             </div>
           </div>
           <div className="proyect__donacion">
