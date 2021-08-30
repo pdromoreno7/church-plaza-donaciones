@@ -124,10 +124,10 @@ export default function Navbar() {
           className="nav__icon-menu iconSize"
           onClick={() => setShowMobileMenu(!showMobileMenu)}
         >
-          {showMobileMenu ? <CgMenu /> : <CgClose />}
+          {showMobileMenu ? <CgClose /> : <CgMenu />}
         </div>
 
-        <ul className={!showMobileMenu ? "nav__menu open__menu" : "nav__menu"}>
+        <ul className={!showMobileMenu ? "nav__menu " : "nav__menu open__menu"}>
           <li className="nav__item">
             <a
               href="#inicio"
