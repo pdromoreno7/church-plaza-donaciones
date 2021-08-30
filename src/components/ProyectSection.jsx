@@ -104,7 +104,7 @@ const ProyectSectionStyles = styled.section`
       }
     }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 475px) {
     /* .proyect__main {
       margin-bottom: 20px;
     } */
