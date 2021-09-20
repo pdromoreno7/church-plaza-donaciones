@@ -1,5 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { progresResult } from "../assets/data/porsentajeDonacion";
+
+// function cadenaANumber(progresResult) {
+//   let numberStringResult = `${0}${progresResult}`;
+//   let resultNumber = parseInt(numberStringResult);
+//   return resultNumber;
+// }
+
+// let progressCircle = (472 - 472) * cadenaANumber(progresResult);
+// console.log(progressCircle);
+// let progressCircleResult = progressCircle.toString();
+// console.log(progressCircleResult);
+let numberStringResult = `${0}.${progresResult}`;
+console.log(numberStringResult);
+console.log(typeof numberStringResult);
+let resultNumber = parseFloat(numberStringResult);
+console.log(resultNumber);
+let progressCircle = 472 - 472 * resultNumber + 25;
+console.log(progressCircle);
+let progressCircleResult = progressCircle.toString();
+console.log(progressCircleResult);
 
 const CircleProgressStyles = styled.div`
   .skill {
@@ -51,14 +72,14 @@ const CircleProgressStyles = styled.div`
     }
     @keyframes anim {
       100% {
-        stroke-dashoffset: 165;
+        stroke-dashoffset: ${progressCircleResult};
       }
     }
   }
 `;
 
 export default function CircleProgress() {
-  let number = 65;
+  // let number = 65;
   // let counter = 0;
   // setInterval(() => {
   //   if (counter == number) {
@@ -74,7 +95,7 @@ export default function CircleProgress() {
       <div className="skill">
         <div className="outer">
           <div className="inner">
-            <div id="number-progress">{number}%</div>
+            <div id="number-progress">{progresResult}%</div>
           </div>
         </div>
         <svg
@@ -85,8 +106,8 @@ export default function CircleProgress() {
         >
           <defs>
             <linearGradient id="GradientColor">
-              <stop offset="0%" stop-color="#e91e63" />
-              <stop offset="100%" stop-color="#673ab7" />
+              <stop offset="0%" />
+              <stop offset="100%" />
             </linearGradient>
           </defs>
           <circle cx="80" cy="80" r="70" />
