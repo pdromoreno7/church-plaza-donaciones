@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import ProyectImg from "../assets/proyect__info-img.png";
+import { BarProgress } from "./BarProgress";
 import { Button } from "./Button";
 import CircleProgress from "./CircleProgress";
 
@@ -12,7 +13,9 @@ const ProyectSectionStyles = styled.section`
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   .proyect__title {
     margin-bottom: 24px;
   }
@@ -25,9 +28,12 @@ const ProyectSectionStyles = styled.section`
     align-items: center;
     overflow: hidden;
     padding: 0;
-    margin: 0;
+    margin-bottom: 40px;
 
     /* background-color: var(--white); */
+  }
+  .proyect__bar {
+    width: 90%;
   }
   .proyect__graphi {
     display: flex;
@@ -71,7 +77,7 @@ const ProyectSectionStyles = styled.section`
   }
   @media screen and (max-width: 960px) {
     /* justify-content: center; */
-    margin-left: 0;
+    /* margin-left: 0; */
     .project-container {
       display: flex;
       align-items: center;
@@ -79,6 +85,9 @@ const ProyectSectionStyles = styled.section`
     }
     .proyect__main {
       grid-template-columns: 1fr;
+      width: 100%;
+    }
+    .proyect__bar {
       width: 100%;
     }
     .proyect__graphi {
@@ -167,6 +176,9 @@ export function ProyectSection() {
               <Button btnText="Ver medios de donación" />
             </div>
           </div>
+        </div>
+        <div className="proyect__bar">
+          <BarProgress />
         </div>
       </div>
     </ProyectSectionStyles>

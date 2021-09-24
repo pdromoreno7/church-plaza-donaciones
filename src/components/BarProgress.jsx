@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { progresResult } from "../assets/data/porsentajeDonacion";
 
 const BarProgressStyles = styled.section`
+  padding: 0;
+  width: 100%;
   .progress__container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-    width: 90%;
+    width: 100%;
     background-color: var(--white);
     padding: 0 30px;
     border-radius: 5px;
@@ -28,7 +30,7 @@ const BarProgressStyles = styled.section`
     z-index: 2;
     p {
       margin-top: 8px;
-      color: var(--grey);
+      color: var(--grey-font);
     }
   }
 
@@ -76,6 +78,23 @@ const BarProgressStyles = styled.section`
       width: 0%;
       height: 100%;
       background-color: var(--secun-color);
+    }
+  }
+  /* @media screen and (max-width: 960px){
+   
+  }  */
+  @media screen and (max-width: 745px) {
+    .progress__item {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  @media screen and (max-width: 427px) {
+    .progress__item {
+      p {
+        font-size: 0.7rem;
+      }
     }
   }
 `;

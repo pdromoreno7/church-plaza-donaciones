@@ -1,4 +1,3 @@
-import { BarProgress } from "./components/BarProgress";
 import { Donaciones } from "./components/Donaciones";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
@@ -11,7 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <ProyectSection />
-      <BarProgress />
+
       <Donaciones />
       <Footer />
     </>
