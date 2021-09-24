@@ -145,7 +145,7 @@ export function ProyectSection() {
             <figure className="proyect__graphi-number">
               {/* <img src={ProyectImg} alt="" /> */}
               <CircleProgress />
-              <h3>Progreso</h3>
+              <h3>Recaudación</h3>
             </figure>
             <div className="proyect__graphi-description">
               <h3>Levantamiento de paredes</h3>
