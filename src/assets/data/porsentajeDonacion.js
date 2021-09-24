@@ -1,6 +1,6 @@
 const donacionData = {
   objetivo: 100,
-  recaudacion: 99,
+  recaudacion: 50,
 };
 
 export let progresResult =
