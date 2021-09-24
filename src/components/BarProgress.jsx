@@ -28,6 +28,7 @@ const BarProgressStyles = styled.section`
     z-index: 2;
     p {
       margin-top: 8px;
+      color: var(--grey);
     }
   }
 
@@ -41,19 +42,20 @@ const BarProgressStyles = styled.section`
     background-color: var(--secun-color);
   }
   .item-1 {
+    left: -5.5%;
   }
   .item-2 {
     left: 40%;
   }
   .item-3 {
-    right: 1%;
+    right: -6%;
   }
   .progress__barra-1 {
     position: absolute;
     top: 31%;
-    left: 10%;
+    left: 5%;
     height: 6px;
-    width: 40%;
+    width: 45%;
     background-color: var(--grey);
     z-index: 1;
     .barra__mivel-1 {
@@ -65,9 +67,9 @@ const BarProgressStyles = styled.section`
   .progress__barra-2 {
     position: absolute;
     top: 31%;
-    left: 51%;
+    left: 50%;
     height: 6px;
-    width: 38%;
+    width: 46%;
     background-color: var(--grey);
     z-index: 1;
     .barra__mivel-2 {
@@ -76,90 +78,12 @@ const BarProgressStyles = styled.section`
       background-color: var(--secun-color);
     }
   }
-  /* .wrapper-progressBar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .progressBar {
-    width: 100%;
-    display: flex;
-  }
-  .progressBar li {
-    list-style-type: none;
-    float: left;
-    width: 45%;
-    position: relative;
-  }
-
-  .progressBar li:before {
-    content: " ";
-    line-height: 30px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: block;
-    text-align: center;
-    margin: 0 30px 10px;
-    background-color: white;
-  }
-
-  .progressBar .l2:after {
-    content: "";
-    position: absolute;
-    width: ${progresResult}%;
-    height: 6px;
-    background-color: #ddd;
-    top: 15px;
-    left: -90%;
-    background-color: var(--secun-color);
-  }
-  .progressBar .r2:after {
-    content: "";
-    position: absolute;
-    width: ${progresResult}%;
-    height: 6px;
-    background-color: #ddd;
-    top: 15px;
-    left: -90%;
-    background-color: var(--secun-color);
-  }
-
-  .progressBar .l1:first-child:after {
-    content: none;
-  }
-  .progressBar .l1:first-child:before {
-    content: none;
-  }
-
-  .progressBar li.active {
-    color: var(--font-color-2);
-  }
-
-  .progressBar li.active:before {
-    border-color: var(--secun-color);
-    background-color: var(--secun-color);
-  } */
-
-  /* .progressBar li.active + li:after {
-    background-color: var(--secun-color);
-  } */
 `;
 
 export function BarProgress() {
   return (
     <BarProgressStyles className="bd-container">
       <div className="progress__container">
-        {/* <div className="wrapper-progressBar">
-          <ul className="progressBar">
-            <li className="active">Recaudación</li>
-            <li className="active l2">Realización</li>
-          
-          </ul>
-        </div> */}
         <div className="progress__box">
           <div className="progress__item item-1">
             <div className="bolita b-active"></div>
