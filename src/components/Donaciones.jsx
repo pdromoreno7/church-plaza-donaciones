@@ -58,7 +58,11 @@ export function Donaciones() {
           <h2 className="donation__title">Medios de donación</h2>
           <div className="donation__main">
             <div className="donation__main-items">
-              <BanckCard logoBanck={NequiLogo} number={3144516187} />
+              <BanckCard
+                logoBanck={NequiLogo}
+                number={3144516187}
+                Link="https://recarga.nequi.com.co/bdigitalpsl/#!/"
+              />
             </div>
             <div className="donation__main-items">
               <BanckCard logoBanck={Bancolombia} number={3144516187} />

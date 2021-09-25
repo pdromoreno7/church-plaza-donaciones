@@ -41,7 +41,7 @@ const BanckStyle = styled.div`
   } */
 `;
 
-export function BanckCard({ logoBanck, number }) {
+export function BanckCard({ logoBanck, number, link }) {
   return (
     <BanckStyle>
       <div className="card__container">
@@ -53,7 +53,7 @@ export function BanckCard({ logoBanck, number }) {
           <p className="card__info-number">{number}</p>
         </div>
         <div className="card__button">
-          <Button btnText="Donar" outline />
+          <Button btnText="Donar" outline btnLink={link} />
         </div>
       </div>
     </BanckStyle>

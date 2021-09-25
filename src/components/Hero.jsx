@@ -95,7 +95,7 @@ export function Hero() {
           <div className="hero__info">
             <h1>Reedificando nuestro altar</h1>
             <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
-            <Button btnText="Conocer el proyecto" />
+            <Button btnText="Conocer el proyecto" btnLink="#proyect" />
           </div>
           <div className="hero__image">
             <img src={heroImg} alt="" className="hero__image-img" />

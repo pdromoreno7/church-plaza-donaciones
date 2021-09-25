@@ -173,7 +173,7 @@ export function ProyectSection() {
               </p>
             </div>
             <div className="proyect__donacion-buttom">
-              <Button btnText="Ver medios de donación" />
+              <Button btnText="Ver medios de donación" btnLink="#donacion" />
             </div>
           </div>
         </div>
