@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/church-plaza-donaciones/static/css/main.b64fc87e.chunk.css",
-    "main.js": "/church-plaza-donaciones/static/js/main.e5982e24.chunk.js",
-    "main.js.map": "/church-plaza-donaciones/static/js/main.e5982e24.chunk.js.map",
+    "main.js": "/church-plaza-donaciones/static/js/main.458f9f8e.chunk.js",
+    "main.js.map": "/church-plaza-donaciones/static/js/main.458f9f8e.chunk.js.map",
     "runtime-main.js": "/church-plaza-donaciones/static/js/runtime-main.c7b677fb.js",
     "runtime-main.js.map": "/church-plaza-donaciones/static/js/runtime-main.c7b677fb.js.map",
     "static/js/2.67f3128f.chunk.js": "/church-plaza-donaciones/static/js/2.67f3128f.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.c7b677fb.js",
     "static/js/2.67f3128f.chunk.js",
     "static/css/main.b64fc87e.chunk.css",
-    "static/js/main.e5982e24.chunk.js"
+    "static/js/main.458f9f8e.chunk.js"
   ]
 }
