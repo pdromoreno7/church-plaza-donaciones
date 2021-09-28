@@ -61,7 +61,7 @@ export function Donaciones() {
               <BanckCard
                 logoBanck={NequiLogo}
                 number={3144516187}
-                Link="https://recarga.nequi.com.co/bdigitalpsl/#!/"
+                link="https://recarga.nequi.com.co/bdigitalpsl/#!/"
               />
             </div>
             <div className="donation__main-items">
