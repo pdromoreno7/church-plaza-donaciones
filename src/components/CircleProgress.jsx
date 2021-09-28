@@ -2,25 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { progresResult } from "../assets/data/porsentajeDonacion";
 
-// function cadenaANumber(progresResult) {
-//   let numberStringResult = `${0}${progresResult}`;
-//   let resultNumber = parseInt(numberStringResult);
-//   return resultNumber;
-// }
+//Funcion para calcular el valor del estilo stroke-dashoffset segun el porsentaje:
 
-// let progressCircle = (472 - 472) * cadenaANumber(progresResult);
-// console.log(progressCircle);
-// let progressCircleResult = progressCircle.toString();
-// console.log(progressCircleResult);
-let numberStringResult = `${0}.${progresResult}`;
-console.log(numberStringResult);
-console.log(typeof numberStringResult);
-let resultNumber = parseFloat(numberStringResult);
-console.log(resultNumber);
-let progressCircle = 472 - 472 * resultNumber + 25;
-console.log(progressCircle);
-let progressCircleResult = progressCircle.toString();
-console.log(progressCircleResult);
+function encontrarResult(resultData) {
+  if (resultData <= 99) {
+    let numberStringResult = `${0}.${resultData}`;
+
+    let resultNumber = parseFloat(numberStringResult);
+    console.log(resultNumber);
+    let progressCircle = 472 - 472 * resultNumber;
+    let progressCircleResult = progressCircle.toString();
+    return progressCircleResult;
+  } else {
+    let otroProgressCircleResult = "0";
+    return otroProgressCircleResult;
+  }
+}
 
 const CircleProgressStyles = styled.div`
   .skill {
@@ -61,7 +58,7 @@ const CircleProgressStyles = styled.div`
       fill: none;
       stroke: var(--secun-color);
       stroke-width: 20px;
-      stroke-dasharray: 472;
+      stroke-dasharray: 439.8;
       stroke-dashoffset: 472;
       animation: anim 2s linear forwards;
     }
@@ -72,7 +69,7 @@ const CircleProgressStyles = styled.div`
     }
     @keyframes anim {
       100% {
-        stroke-dashoffset: ${progressCircleResult};
+        stroke-dashoffset: ${encontrarResult(progresResult)};
       }
     }
   }
