@@ -1,5 +1,11 @@
+/* eslint-disable eqeqeq */
+// import { useState } from "react";
+import { BsCheck } from "react-icons/bs";
 import styled from "styled-components";
-import { progresResult } from "../assets/data/porsentajeDonacion";
+import {
+  progresResult,
+  resultRealizacion,
+} from "../assets/data/porsentajeDonacion";
 
 const BarProgressStyles = styled.section`
   padding: 0;
@@ -39,6 +45,9 @@ const BarProgressStyles = styled.section`
     height: 20px;
     border-radius: 50%;
     background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .b-active {
     background-color: var(--secun-color);
@@ -75,7 +84,7 @@ const BarProgressStyles = styled.section`
     background-color: var(--grey);
     z-index: 1;
     .barra__mivel-2 {
-      width: 0%;
+      width: ${resultRealizacion}%;
       height: 100%;
       background-color: var(--secun-color);
     }
@@ -83,6 +92,14 @@ const BarProgressStyles = styled.section`
   /* @media screen and (max-width: 960px){
    
   }  */
+  .check-desactivado {
+    display: none;
+  }
+  .check-activado {
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+  }
   @media screen and (max-width: 745px) {
     .progress__item {
       p {
@@ -100,19 +117,47 @@ const BarProgressStyles = styled.section`
 `;
 
 export function BarProgress() {
+  // const [showCheck, setShowCheck] = useState(false);
+
+  function setShowCheck(resultData) {
+    if (resultData == 100) {
+      let ShowCheck = true;
+      return ShowCheck;
+    } else {
+      let noShowCheck = false;
+      return noShowCheck;
+    }
+  }
+
   return (
     <BarProgressStyles className="bd-container">
       <div className="progress__container">
         <div className="progress__box">
           <div className="progress__item item-1">
-            <div className="bolita b-active"></div>
+            <div className="bolita b-active">
+              {setShowCheck(progresResult) ? (
+                <BsCheck className="check-activado" />
+              ) : (
+                <BsCheck className="check-desactivado" />
+              )}
+            </div>
             <p>Recaudación</p>
           </div>
           <div className="progress__barra-1">
             <div className="barra__mivel-1"></div>
           </div>
           <div className="progress__item item-2">
-            <div className="bolita"></div>
+            <div
+              className={`${
+                setShowCheck(progresResult) ? "bolita b-active" : "bolita"
+              }`}
+            >
+              {setShowCheck(resultRealizacion) ? (
+                <BsCheck className="check-activado" />
+              ) : (
+                <BsCheck className="check-desactivado" />
+              )}
+            </div>
             <p>Realización</p>
           </div>
           <div className="progress__barra-2">
