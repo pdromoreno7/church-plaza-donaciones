@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/church-plaza-donaciones/static/css/main.b64fc87e.chunk.css",
-    "main.js": "/church-plaza-donaciones/static/js/main.7968a667.chunk.js",
-    "main.js.map": "/church-plaza-donaciones/static/js/main.7968a667.chunk.js.map",
+    "main.css": "/church-plaza-donaciones/static/css/main.f0304b56.chunk.css",
+    "main.js": "/church-plaza-donaciones/static/js/main.240c1b58.chunk.js",
+    "main.js.map": "/church-plaza-donaciones/static/js/main.240c1b58.chunk.js.map",
     "runtime-main.js": "/church-plaza-donaciones/static/js/runtime-main.c7b677fb.js",
     "runtime-main.js.map": "/church-plaza-donaciones/static/js/runtime-main.c7b677fb.js.map",
-    "static/js/2.67f3128f.chunk.js": "/church-plaza-donaciones/static/js/2.67f3128f.chunk.js",
-    "static/js/2.67f3128f.chunk.js.map": "/church-plaza-donaciones/static/js/2.67f3128f.chunk.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/church-plaza-donaciones/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.9e5100e4.chunk.js": "/church-plaza-donaciones/static/js/2.9e5100e4.chunk.js",
+    "static/js/2.9e5100e4.chunk.js.map": "/church-plaza-donaciones/static/js/2.9e5100e4.chunk.js.map",
     "index.html": "/church-plaza-donaciones/index.html",
-    "static/css/main.b64fc87e.chunk.css.map": "/church-plaza-donaciones/static/css/main.b64fc87e.chunk.css.map",
-    "static/js/2.67f3128f.chunk.js.LICENSE.txt": "/church-plaza-donaciones/static/js/2.67f3128f.chunk.js.LICENSE.txt",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/church-plaza-donaciones/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.f0304b56.chunk.css.map": "/church-plaza-donaciones/static/css/main.f0304b56.chunk.css.map",
+    "static/js/2.9e5100e4.chunk.js.LICENSE.txt": "/church-plaza-donaciones/static/js/2.9e5100e4.chunk.js.LICENSE.txt",
     "static/media/Hero-Image-gradiente.9fbada20.jpg": "/church-plaza-donaciones/static/media/Hero-Image-gradiente.9fbada20.jpg",
     "static/media/Hero-Image.7bb22625.jpg": "/church-plaza-donaciones/static/media/Hero-Image.7bb22625.jpg",
     "static/media/LogoFuente-Nav.2fbb6fad.svg": "/church-plaza-donaciones/static/media/LogoFuente-Nav.2fbb6fad.svg",
@@ -19,8 +21,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c7b677fb.js",
-    "static/js/2.67f3128f.chunk.js",
-    "static/css/main.b64fc87e.chunk.css",
-    "static/js/main.7968a667.chunk.js"
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.9e5100e4.chunk.js",
+    "static/css/main.f0304b56.chunk.css",
+    "static/js/main.240c1b58.chunk.js"
   ]
 }
