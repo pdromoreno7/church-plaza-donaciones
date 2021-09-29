@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import { Button } from "./Button";
 
@@ -42,8 +44,12 @@ const BanckStyle = styled.div`
 `;
 
 export function BanckCard({ logoBanck, number, link }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <BanckStyle>
+    <BanckStyle data-aos="fade-up">
       <div className="card__container">
         <figure className="card__logo">
           <img src={logoBanck} alt="Icono de banco" />

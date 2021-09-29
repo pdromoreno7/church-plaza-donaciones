@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import heroImg from "../assets/Hero-Image.jpg";
 import heroImgGradiente from "../assets/Hero-Image-gradiente.jpg";
 import { Button } from "./Button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HeroStyles = styled.section`
   width: 100%;
@@ -88,11 +90,14 @@ const HeroStyles = styled.section`
 `;
 
 export function Hero() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <HeroStyles id="inicio">
       <div className="bd-container">
         <div className="hero__main  ">
-          <div className="hero__info">
+          <div data-aos="fade-up" className="hero__info">
             <h1>Reedificando nuestro altar</h1>
             <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
             <Button btnText="Conocer el proyecto" btnLink="#proyect" />
