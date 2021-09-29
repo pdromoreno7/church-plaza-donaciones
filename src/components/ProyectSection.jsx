@@ -162,7 +162,7 @@ export function ProyectSection() {
                 finalización.
               </p>
               <div className="proyect__graphi-buttom">
-                <Button btnText="Hacer donación" />
+                <Button btnText="Hacer donación" btnLink="#donacion" />
               </div>
             </div>
           </div>

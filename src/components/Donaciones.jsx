@@ -65,7 +65,11 @@ export function Donaciones() {
               />
             </div>
             <div className="donation__main-items">
-              <BanckCard logoBanck={Bancolombia} number={3144516187} />
+              <BanckCard
+                logoBanck={Bancolombia}
+                number={3144516187}
+                link="https://sucursalpersonas.transaccionesbancolombia.com/mua/USER?scis=VYIUvGIkcrGieLuXxdZthPP9wju4bKYlhTealHvJy%2B0%3D#no-back-button"
+              />
             </div>
           </div>
         </div>
