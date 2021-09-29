@@ -164,7 +164,17 @@ export function BarProgress() {
             <div className="barra__mivel-2"></div>
           </div>
           <div className="progress__item item-3">
-            <div className="bolita"></div>
+            <div
+              className={`${
+                setShowCheck(resultRealizacion) ? "bolita b-active" : "bolita"
+              }`}
+            >
+              {setShowCheck(resultRealizacion) ? (
+                <BsCheck className="check-activado" />
+              ) : (
+                <BsCheck className="check-desactivado" />
+              )}
+            </div>
             <p>Finalización</p>
           </div>
         </div>

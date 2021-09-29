@@ -32,5 +32,5 @@ function progresRealizacion(n) {
   }
 }
 // Del 1 al 6 que tan avanzado esta el proyecto en obra?
-let avance = 0;
+let avance = 6;
 export let resultRealizacion = progresRealizacion(avance);
