@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import { CgMenu, CgClose } from "react-icons/cg";
 import logoNav from "../assets/LogoFuente-Nav.svg";
@@ -113,10 +115,15 @@ const NavMenuStyles = styled.nav`
 
 export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <NavMenuStyles>
       <div className="wrapper bd-container">
-        <div className="nav__logo">
+        <div data-aos="fade" className="nav__logo">
           <img src={logoNav} alt="" />
         </div>
 

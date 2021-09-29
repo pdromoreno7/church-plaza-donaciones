@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import styled from "styled-components";
 
@@ -14,8 +15,14 @@ const ButtonStyle = styled.div`
 
     border-radius: 5px;
     :hover {
-      -webkit-box-shadow: 5px 14px 17px -4px #898989;
-      box-shadow: 5px 14px 17px -4px #898989;
+      background-color: ${(props) =>
+        props.outline ? "var(--boton-grey)" : "var(--boton-color)"};
+
+      color: ${(props) =>
+        props.outline ? "var(--font-color-1)" : "var(--white)"};
+
+      /* -webkit-box-shadow: 5px 14px 17px -4px #898989;
+      box-shadow: 5px 14px 17px -4px #898989; */
       transition: 1s;
     }
   }

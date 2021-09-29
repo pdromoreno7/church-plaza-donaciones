@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 // import ProyectImg from "../assets/proyect__info-img.png";
 import { BarProgress } from "./BarProgress";
 import { Button } from "./Button";
 import CircleProgress from "./CircleProgress";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ProyectSectionStyles = styled.section`
   /* margin: 0 15px; */
@@ -134,6 +136,9 @@ const ProyectSectionStyles = styled.section`
 `;
 
 export function ProyectSection() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <ProyectSectionStyles id="proyect">
       <div className="project-container bd-container">
@@ -142,12 +147,12 @@ export function ProyectSection() {
         </div>
         <div className="proyect__main">
           <div className="proyect__graphi">
-            <figure className="proyect__graphi-number">
+            <figure data-aos="fade-right" className="proyect__graphi-number">
               {/* <img src={ProyectImg} alt="" /> */}
               <CircleProgress />
               <h3>Recaudación</h3>
             </figure>
-            <div className="proyect__graphi-description">
+            <div data-aos="fade-right" className="proyect__graphi-description">
               <h3>Levantamiento de paredes</h3>
               <p>
                 Nos encontramos en la etapa de levantamiento de paredes de
@@ -161,7 +166,7 @@ export function ProyectSection() {
               </div>
             </div>
           </div>
-          <div className="proyect__donacion">
+          <div data-aos="fade-left" className="proyect__donacion">
             <div className="proyect__donacion-description">
               <h3>Conoce como donar</h3>
               <p>
