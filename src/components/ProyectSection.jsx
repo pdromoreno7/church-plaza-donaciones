@@ -7,6 +7,8 @@ import CircleProgress from "./CircleProgress";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+//prueba de despliegue
+
 const ProyectSectionStyles = styled.section`
   /* margin: 0 15px; */
   /* margin-left: 1rem; */
