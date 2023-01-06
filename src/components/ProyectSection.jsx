@@ -153,13 +153,14 @@ export function ProyectSection() {
               <h3>Recaudación</h3>
             </figure>
             <div data-aos="fade-right" className="proyect__graphi-description">
-              <h3>Levantamiento de paredes</h3>
+              <h3>Estado actual del proyecto</h3>
               <p>
-                Nos encontramos en la etapa de levantamiento de paredes de
-                nuestro lugar de encuentro. <br />
+                Nos encontramos en la etapa de levantamiento de paredes, este
+                periodo consta de tres etapas: Recaudación, realización y
+                finalización. <br />
                 <br />
-                Este consta de tres etapas que son recaudación, realización y
-                finalización.
+                {/* Este consta de tres etapas que son recaudación, realización y
+                finalización. */}
               </p>
               <div className="proyect__graphi-buttom">
                 <Button btnText="Hacer donación" btnLink="#donacion" />
@@ -168,17 +169,19 @@ export function ProyectSection() {
           </div>
           <div data-aos="fade-left" className="proyect__donacion">
             <div className="proyect__donacion-description">
-              <h3>Conoce como donar</h3>
+              <h3>¿Cómo donar?</h3>
               <p>
-                Puedes formar parte de este proyecto y darnos tu ayuda para
-                hacerlo una realidad <br />
+                Tu donación de hoy ayudará a construir un nuevo y renovado
+                templo y gracias a esto más personas podrán congregarse y
+                recibir guía espiritual.
                 <br />
-                Las donaciones se ven reflejadas cada domingo en la tarde hora
-                colombia
+                <br />
+                {/* Las donaciones se ven reflejadas cada domingo en la tarde hora
+                colombia */}
               </p>
             </div>
             <div className="proyect__donacion-buttom">
-              <Button btnText="Ver medios de donación" btnLink="#donacion" />
+              <Button btnText="Quiero donar" btnLink="#donacion" />
             </div>
           </div>
         </div>

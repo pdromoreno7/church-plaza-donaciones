@@ -98,9 +98,12 @@ export function Hero() {
       <div className="bd-container">
         <div className="hero__main  ">
           <div data-aos="fade-up" className="hero__info">
-            <h1>Reedificando nuestro altar</h1>
-            <p>Conoce como lo estamos haciendo y como puedes formar parte </p>
-            <Button btnText="Conocer el proyecto" btnLink="#proyect" />
+            <h1>Renovando nuestro altar para edificar más vidas</h1>
+            <p>
+              Nuestra remodelación va en marcha, tu apoyo podrá acelerar el
+              cumplimiento de esta meta.{" "}
+            </p>
+            <Button btnText="Ver avances del proyecto" btnLink="#proyect" />
           </div>
           <div className="hero__image">
             <img src={heroImg} alt="" className="hero__image-img" />
